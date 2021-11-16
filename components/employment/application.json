@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_employment_applications",
+  "info": {
+    "name": "application",
+    "icon": "file-upload",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "attachments": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "requirements": {
+      "type": "richtext"
+    }
+  }
+}

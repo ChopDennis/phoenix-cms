@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/teachers",
-      "handler": "teachers.find",
+      "path": "/regions",
+      "handler": "region.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/teachers/count",
-      "handler": "teachers.count",
+      "path": "/regions/count",
+      "handler": "region.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/teachers/:id",
-      "handler": "teachers.findOne",
+      "path": "/regions/:id",
+      "handler": "region.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/teachers",
-      "handler": "teachers.create",
+      "path": "/regions",
+      "handler": "region.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/teachers/:id",
-      "handler": "teachers.update",
+      "path": "/regions/:id",
+      "handler": "region.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/teachers/:id",
-      "handler": "teachers.delete",
+      "path": "/regions/:id",
+      "handler": "region.delete",
       "config": {
         "policies": []
       }

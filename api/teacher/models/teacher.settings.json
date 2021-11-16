@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "teachers",
+  "info": {
+    "name": "Teacher",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "experiences": {
+      "type": "component",
+      "repeatable": true,
+      "component": "employment.employee"
+    },
+    "user": {
+      "via": "teacher",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "application": {
+      "type": "component",
+      "repeatable": false,
+      "component": "employment.application"
+    },
+    "testimonials": {
+      "via": "teacher",
+      "collection": "testimonial"
+    },
+    "teacher_applicants": {
+      "via": "teacher",
+      "collection": "teacher-applicant"
+    }
+  }
+}

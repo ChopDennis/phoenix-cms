@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_employment_employees",
+  "info": {
+    "name": "employee",
+    "icon": "briefcase",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "begin_date": {
+      "type": "date",
+      "required": true
+    },
+    "end_date": {
+      "type": "date",
+      "required": true
+    },
+    "employee_type": {
+      "model": "employee-type"
+    },
+    "work_region": {
+      "model": "region"
+    },
+    "work_for": {
+      "type": "string",
+      "required": true
+    },
+    "work_address": {
+      "type": "string",
+      "required": true
+    },
+    "schedule": {
+      "type": "text"
+    },
+    "on_the_job": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

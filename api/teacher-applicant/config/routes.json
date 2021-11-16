@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/teacher-applicants",
+      "handler": "teacher-applicant.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/teacher-applicants/count",
+      "handler": "teacher-applicant.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/teacher-applicants/:id",
+      "handler": "teacher-applicant.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/teacher-applicants",
+      "handler": "teacher-applicant.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/teacher-applicants/:id",
+      "handler": "teacher-applicant.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/teacher-applicants/:id",
+      "handler": "teacher-applicant.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
